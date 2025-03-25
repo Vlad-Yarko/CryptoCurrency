@@ -5,11 +5,14 @@
 #### Eventually go to "Backend" folder by terminal
 #### Do this command for installing all dependencies
 ```
+poetry shell
+```
+```
 poetry install
 ```
-After run your main file
+For windows you can use this command
 ```
-python app/main.py
+$env:PYTHONPATH="app"; poetry run uvicorn app.main:asgi_app
 ```
 #### Backend part is finished, so let's roll to frontend
 #### Go to Frontend folder
